@@ -1,0 +1,19 @@
+<div class="container">
+  <form [formGroup]="registrationForm" (ngSubmit)="onSubmit(registrationForm.value)">
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" id="username" ngModel name="username" #username="ngModel" class="form-control"
+        required />
+      <div class="alert alert-danger" *ngIf="username.touched && !username.valid">User Name is required.</div>    
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" ngModel name="password" #password="ngModel" class="form-control"
+        required/>
+      <div class="alert alert-danger" *ngIf="password.touched && !password.valid">Password is required.</div>
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary" [disabled]="!registrationForm.valid">Register</button>
+    </div>
+  </form>
+</div>
