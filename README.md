@@ -47,7 +47,7 @@ ng serve
 In a web browser navigate to: (http://localhost:4200). The app will automatically reload if you change any of the source files.
 
 ### LINT PROJECT:
-You can lint files in the project. A linter is a small program that checks code for stylistic or programming errors. We will be alble to lint the TypeScript files with tslint. We will be able to lint the html files with htmlhint.
+You can lint files in the project. A linter is a small program that checks code for stylistic or programming errors. We will be able to lint the TypeScript files with tslint. We will be able to lint the html files with htmlhint.
 ```
 ng lint
 ```
