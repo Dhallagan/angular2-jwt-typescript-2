@@ -10,7 +10,7 @@
     "lint": "tslint \"src/**/*.ts\"",
     "postinstall": "typings install",
     "pree2e": "webdriver-manager update",
-    "test": "ng test"
+    "test": "ng test --watch false"
   },
   "private": true,
   "dependencies": {
